@@ -1,0 +1,143 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  1
+[LengthUnits] =  centimeters
+[ProblemType] =  axisymmetric
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 2
+  <BeginBdry>
+    <BdryName> = "Ground"
+    <BdryType> = 0
+    <Vs> = 0
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "A0"
+    <BdryType> = 0
+    <Vs> = 0
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+[BlockProps]  = 4
+  <BeginBlock>
+    <BlockName> = "Skin"
+    <ex> = 1200
+    <ey> = 1200
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Muscle"
+    <ex> = 7000
+    <ey> = 7000
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Air"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Copper"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 4
+  <BeginConductor>
+    <ConductorName> = "Tx-Positive"
+    <Vc> = 1
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "Tx-Negative"
+    <Vc> = 0
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "Rx-Positive"
+    <Vc> = 0
+    <qc> = 0
+    <ConductorType> = 0
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "Rx-Negative"
+    <Vc> = 0
+    <qc> = 0
+    <ConductorType> = 0
+  <EndConductor>
+[NumPoints] = 24
+0	0	0	0	0
+5.5999999999999996	0	0	0	0
+5.5999999999999996	70	0	0	0
+0	70	0	0	0
+6	0	0	0	0
+6	70	0	0	0
+6	14	0	0	0
+6.0999999999999996	14	0	0	0
+6.0999999999999996	16	0	0	0
+6	16	0	0	0
+6	24	0	0	0
+6.0999999999999996	24	0	0	0
+6.0999999999999996	26	0	0	0
+6	26	0	0	0
+6	49	0	0	0
+6.0999999999999996	49	0	0	0
+6.0999999999999996	51	0	0	0
+6	51	0	0	0
+6	59	0	0	0
+6.0999999999999996	59	0	0	0
+6.0999999999999996	61	0	0	0
+6	61	0	0	0
+20	0	0	0	0
+20	70	0	0	0
+[NumSegments] = 30
+0	1	-1	0	0	0	0
+1	2	-1	0	0	0	0
+2	3	-1	0	0	0	0
+3	0	-1	2	0	0	0
+1	4	-1	0	0	0	0
+4	6	-1	0	0	0	0
+5	2	-1	0	0	0	0
+6	9	-1	0	0	0	0
+9	10	-1	0	0	0	0
+6	7	-1	0	0	0	0
+7	8	-1	0	0	0	1
+8	9	-1	0	0	0	0
+10	13	-1	0	0	0	0
+13	14	-1	0	0	0	0
+10	11	-1	0	0	0	0
+11	12	-1	0	0	0	2
+12	13	-1	0	0	0	0
+14	17	-1	0	0	0	0
+17	18	-1	0	0	0	0
+14	15	-1	0	0	0	0
+15	16	-1	0	0	0	3
+16	17	-1	0	0	0	0
+18	21	-1	0	0	0	0
+21	5	-1	0	0	0	0
+18	19	-1	0	0	0	0
+19	20	-1	0	0	0	4
+20	21	-1	0	0	0	0
+4	22	-1	1	0	0	0
+22	23	-1	1	0	0	0
+23	5	-1	1	0	0	0
+[NumArcSegments] = 0
+[NumHoles] = 0
+[NumBlockLabels] = 7
+2.7999999999999998	35	2	-1	0	0
+5.7999999999999998	35	1	-1	0	0
+6.0499999999999998	15	4	-1	0	0
+6.0499999999999998	25	4	-1	0	0
+6.0499999999999998	50	4	-1	0	0
+6.0499999999999998	60	4	-1	0	0
+13	35	3	-1	0	0
